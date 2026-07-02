@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance - FIXIT</title>   
+</head>
+    
+</html>
+
+<link rel="stylesheet" href="style.css"> 
+<body>
+    
+
+<header>
+    <nav class="navbar">
+        <div class="logo">🛠️ FIXIT  </div>
+        
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    
+
+    <!-- Left Links -->
+    <ul class="nav-left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="repair-guides.html">Repair Guides</a></li>
+        <li><a href="maintenance.html">Maintenance</a></li>
+        <li><a href="hardware parts.html">Hardware parts</a></li>
+    </ul>
+
+    <!-- Right Links -->
+    <ul class="nav-right">
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+</header>
+
+
+<section class="maintenance-banner">
+
+    <img src="images/maintenance back.jpg" alt="Maintenance Banner">
+
+    <div class="nance-content">
+
+        <h4>MAINTENANCE</h4>
+
+        <h1>
+            Keep Your Computer<br>
+            Running Like New.
+        </h1>
+
+        <p>
+            Learn proper cleaning, preventive maintenance,
+            and optimization to improve performance and
+            extend the lifespan of your PC.
+        </p>
+
+    </div>
+</section>
+
+<!-- Maintenance Section -->
+<section class="maintenance-section">
+
+    <h2>Preventive Maintenance</h2>
+
+    <div class="maintenance-grid">
+
+        <!-- Card 1 -->
+        <div class="maintenance-card">
+            <h3>Dust Cleaning</h3>
+            <p>Remove dust from your PC to improve airflow and cooling.</p>
+
+            <button class="accordion">Read Guide ▼</button>
+
+            <div class="panel">
+                <ol>
+                    <li>Turn off and unplug the computer.</li>
+                    <li>Open the side panel.</li>
+                    <li>Use compressed air to remove dust.</li>
+                    <li>Clean fans and air vents.</li>
+                    <li>Close the case and reconnect power.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="maintenance-card">
+            <h3>Thermal Paste Replacement</h3>
+            <p>Replace old thermal paste for better CPU cooling.</p>
+
+            <button class="accordion">Read Guide ▼</button>
+
+            <div class="panel">
+                <ol>
+                    <li>Remove the CPU cooler.</li>
+                    <li>Clean old thermal paste.</li>
+                    <li>Apply a pea-sized amount of new paste.</li>
+                    <li>Reinstall the cooler.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="maintenance-card">
+            <h3>Fan Cleaning</h3>
+            <p>Keep your fans clean to reduce heat and noise.</p>
+
+            <button class="accordion">Read Guide ▼</button>
+
+            <div class="panel">
+                <ol>
+                    <li>Hold the fan blades.</li>
+                    <li>Blow compressed air.</li>
+                    <li>Wipe remaining dust.</li>
+                    <li>Reconnect everything.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="maintenance-card">
+            <h3>Battery Care</h3>
+            <p>Extend your laptop battery's lifespan.</p>
+
+            <button class="accordion">Read Guide ▼</button>
+
+            <div class="panel">
+                <ol>
+                    <li>Avoid overheating.</li>
+                    <li>Use the original charger.</li>
+                    <li>Don't keep it plugged in constantly.</li>
+                    <li>Enable battery saver mode.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="maintenance-card">
+            <h3>Storage Cleanup</h3>
+            <p>Free up storage space for better performance.</p>
+
+            <button class="accordion">Read Guide ▼</button>
+
+            <div class="panel">
+                <ol>
+                    <li>Delete temporary files.</li>
+                    <li>Uninstall unused software.</li>
+                    <li>Empty the Recycle Bin.</li>
+                    <li>Run Disk Cleanup.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="maintenance-card">
+            <h3>Driver Updates</h3>
+            <p>Keep hardware drivers updated for stability.</p>
+
+            <button class="accordion">Read Guide ▼</button>
+
+            <div class="panel">
+                <ol>
+                    <li>Open Device Manager.</li>
+                    <li>Check for outdated drivers.</li>
+                    <li>Download updates from the manufacturer.</li>
+                    <li>Restart your PC.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="maintenance-card">
+            <h3>Monitor Cleaning</h3>
+            <p>Keep your monitor clean for a clear and sharp display.</p>
+
+            <button class="accordion">Read Guide ▼</button>
+
+            <div class="panel">
+                <ol>
+                    <li>Turn off the monitor.</li>
+                    <li>Use a microfiber cloth.</li>
+                    <li>Apply screen cleaner to the cloth.</li>
+                    <li>Wipe gently in circular motions.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="maintenance-card">
+            <h3>Cable Management</h3>
+            <p>Organize cables to improve airflow and make upgrades easier.</p>
+
+            <button class="accordion">Read Guide ▼</button>
+
+            <div class="panel">
+                <ol>
+                    <li>Bundle cables using zip ties.</li>
+                    <li>Separate power and data cables.</li>
+                    <li>Keep cables away from fans.</li>
+                    <li>Ensure nothing blocks airflow.</li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+ const accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach(button=>{
+
+    button.addEventListener("click",function(){
+
+        const panel=this.nextElementSibling;
+
+        accordions.forEach(btn=>{
+            if(btn!==this){
+                btn.classList.remove("active");
+                btn.nextElementSibling.style.maxHeight=null;
+                btn.innerHTML="Read Guide ▼";
+            }
+        });
+
+        if(panel.style.maxHeight){
+
+            panel.style.maxHeight=null;
+            this.classList.remove("active");
+            this.innerHTML="Read Guide ▼";
+
+        }else{
+
+            panel.style.maxHeight=panel.scrollHeight+"px";
+            this.classList.add("active");
+            this.innerHTML="Hide Guide ▲";
+
+        }
+
+    });
+
+});
+</script>
+
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navLeft = document.querySelector(".nav-left");
+const navRight = document.querySelector(".nav-right");
+
+menuToggle.addEventListener("click", () => {
+    navLeft.classList.toggle("active");
+    navRight.classList.toggle("active");
+});
+</script>
+</body>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛠️ FIXIT - Hardware Repair Guide</title>
+
+    <link rel="stylesheet" href="style.css">    
+</head>
+ 
+    
+<body>
+
+    <header>
+    <nav class="navbar">
+        <div class="logo">🛠️ FIXIT  </div>
+        
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    
+
+    <!-- Left Links -->
+    <ul class="nav-left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="repair-guides.html">Repair Guides</a></li>
+        <li><a href="maintenance.html">Maintenance</a></li>
+        <li><a href="hardware parts.html">Hardware parts</a></li>
+    </ul>
+
+    <!-- Right Links -->
+    <ul class="nav-right">
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+        </div>
+</header>
+
+
+<section class="hero">
+
+    <img src="images/guide.png" alt="coms">
+
+    <div class="hero-text">
+        <p class="small-title">WELCOME TO</p>
+
+        <h1>FIXIT</h1>
+
+        <h2>
+            Learn.<br>
+            Repair.<br>
+            Improve.
+        </h2>
+
+        <p class="description">
+            Your complete guide to computer hardware repair,
+            troubleshooting, and preventive maintenance.
+        </p>
+
+        <a href="repair-guides.html" class="btn">Explore Guides</a>
+    </div>
+
+</section>
+
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navLeft = document.querySelector(".nav-left");
+const navRight = document.querySelector(".nav-right");
+
+menuToggle.addEventListener("click", () => {
+    navLeft.classList.toggle("active");
+    navRight.classList.toggle("active");
+});
+</script>
+</body>
+</html>

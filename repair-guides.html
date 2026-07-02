@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Guides - FIXIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">🛠️ FIXIT</div>
+
+        <!-- Hamburger -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <!-- Left Links -->
+        <ul class="nav-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="repair-guides.html">Repair Guides</a></li>
+            <li><a href="maintenance.html">Maintenance</a></li>
+            <li><a href="hardware parts.html">Hardware Parts</a></li>
+        </ul>
+
+        <!-- Right Links -->
+        <ul class="nav-right">
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<!-- Banner -->
+<section class="page-banner">
+
+    <img src="images/repair guide back.png" alt="Repair Guides Banner">
+
+    <div class="banner-content">
+        <h4>REPAIR GUIDES</h4>
+
+        <h1>
+            Step-by-step guides for<br>
+            common computer problems.
+        </h1>
+
+        <p>
+            Find easy-to-follow instructions to diagnose,
+            fix, and solve the most common computer issues.
+        </p>
+    </div>
+
+</section>
+
+<!-- Black Section -->
+<section class="repair-section">
+
+    <h2>Popular Repair Guides</h2>
+
+    <!-- Your guide cards go here -->
+<div class="guide-grid">
+
+    <div class="guide-card">
+        <h3>Computer Won't Turn On</h3>
+        <p>Steps to troubleshoot and fix power issues.</p>
+        <button class="accordion">Read Guide ▼</button>
+
+        <div class="panel">
+            <h4>Repair Steps</h4>
+            <ol>
+                <li>Check the power cable.</li>
+                <li>Try another wall outlet.</li>
+                <li>Inspect the PSU switch.</li>
+                <li>Reconnect the RAM.</li>
+                <li>Power on the computer.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="guide-card">
+        <h3>Computer Overheating</h3>
+        <p>How to identify overheating and keep your PC cool.</p>
+        <button class="accordion">Read Guide ▼</button>
+
+        <div class="panel">
+            <h4>Repair Steps</h4>
+            <ol>
+                <li>Turn off the PC.</li>
+                <li>Clean dust from fans.</li>
+                <li>Check CPU cooler.</li>
+                <li>Improve airflow.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="guide-card">
+        <h3>Slow Computer Performance</h3>
+        <p>Tips to speed up your  computer system.
+
+        </p>
+        <button class="accordion">Read Guide ▼</button>
+
+        <div class="panel">
+            <h4>Repair Steps</h4>
+            <ol>
+                <li>Disable startup programs.</li>
+                <li>Delete temporary files.</li>
+                <li>Scan for malware.</li>
+                <li>Free up storage space.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="guide-card">
+        <h3>Blue Screen (BSOD)</h3>
+        <p>Fix blue screen errors and computer crashes.</p>
+        <button class="accordion">Read Guide ▼</button>
+
+        <div class="panel">
+            <h4>Repair Steps</h4>
+            <ol>
+                <li>Restart the PC.</li>
+                <li>Update drivers.</li>
+                <li>Check RAM health.</li>
+                <li>Install Windows updates.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="guide-card">
+        <h3>No Internet Connection</h3>
+        <p>Troubleshoot network issues.</p>
+        <button class="accordion">Read Guide ▼</button>
+
+        <div class="panel">
+            <h4>Repair Steps</h4>
+            <ol>
+                <li>Restart the router.</li>
+                <li>Reconnect to Wi-Fi.</li>
+                <li>Check cables.</li>
+                <li>Run Network Troubleshooter.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="guide-card">
+        <h3>No Display on Monitor</h3>
+        <p>Fix monitor and display problems.</p>
+        <button class="accordion">Read Guide ▼</button>
+
+        <div class="panel">
+            <h4>Repair Steps</h4>
+            <ol>
+                <li>Check monitor power.</li>
+                <li>Reconnect display cables.</li>
+                <li>Select correct input.</li>
+                <li>Check graphics card.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="guide-card">
+        <h3>Hard Drive Not Detected</h3>
+        <p>Fix storage detection issues.</p>
+        <button class="accordion">Read Guide ▼</button>
+
+        <div class="panel">
+            <h4>Repair Steps</h4>
+            <ol>
+                <li>Reconnect SATA cables.</li>
+                <li>Check BIOS.</li>
+                <li>Try another SATA port.</li>
+                <li>Test the drive.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="guide-card">
+        <h3>No Sound</h3>
+        <p>Restore audio output.</p>
+        <button class="accordion">Read Guide ▼</button>
+
+        <div class="panel">
+            <h4>Repair Steps</h4>
+            <ol>
+                <li>Check volume settings.</li>
+                <li>Select correct audio device.</li>
+                <li>Update audio drivers.</li>
+                <li>Restart the computer.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+</section>
+
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navLeft = document.querySelector(".nav-left");
+const navRight = document.querySelector(".nav-right");
+
+menuToggle.addEventListener("click", () => {
+    navLeft.classList.toggle("active");
+    navRight.classList.toggle("active");
+});
+</script>
+
+</body>
+
+<script>
+const accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach(button=>{
+
+    button.addEventListener("click",function(){
+
+        const panel=this.nextElementSibling;
+
+        accordions.forEach(btn=>{
+            if(btn!==this){
+                btn.classList.remove("active");
+                btn.nextElementSibling.style.maxHeight=null;
+                btn.innerHTML="Read Guide ▼";
+            }
+        });
+
+        if(panel.style.maxHeight){
+
+            panel.style.maxHeight=null;
+            this.classList.remove("active");
+            this.innerHTML="Read Guide ▼";
+
+        }else{
+
+            panel.style.maxHeight=panel.scrollHeight+"px";
+            this.classList.add("active");
+            this.innerHTML="Hide Guide ▲";
+
+        }
+
+    });
+
+});
+</script>
+
+</html>

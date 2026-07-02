@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Parts - FIXIT</title>
+
+    <link rel="stylesheet" href="style.css">    
+
+</head>
+
+<body>
+    
+
+<header>
+    <nav class="navbar">
+        <div class="logo">🛠️ FIXIT  </div>
+        
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    
+
+    <!-- Left Links -->
+    <ul class="nav-left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="repair-guides.html">Repair Guides</a></li>
+        <li><a href="maintenance.html">Maintenance</a></li>
+        <li><a href="hardware parts.html">Hardware parts</a></li>
+    </ul>
+
+    <!-- Right Links -->
+    <ul class="nav-right">
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+        </div>
+</header>
+
+<section class="hardware-banner">
+
+    <img src="images/hardware-parts banner.jpg" alt="Hardware Parts Banner">
+
+    <div class="hard-content">
+        <h4>FIXIT HARDWARE GUIDE</h4>
+
+        <h1>Hardware <span>Parts</span></h1>
+
+        <p>
+            Learn every component inside a computer—from the CPU and motherboard
+            to RAM, storage, and power supply.
+        </p>
+    </div>
+
+</section>
+
+<section id="hardware-components">
+
+    <!-- Your hardware cards go here -->
+<section id="hardware-components" class="hardware-section">
+
+    <h2>Computer Hardware Components</h2>
+    <p>Learn the function of each hardware component inside a computer.</p>
+
+    <div class="hardware-grid">
+
+        <div class="hardware-card">
+            <img src="images/motherboard.jpg" alt="Motherboard">
+            <h3>Motherboard</h3>
+            <p>Connects all computer components and allows them to communicate.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/cpu.png" alt="CPU">
+            <h3>CPU (Processor)</h3>
+            <p>Executes instructions and performs calculations.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/ram.jpg" alt="RAM">
+            <h3>RAM</h3>
+            <p>Temporarily stores data used by running programs.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/gpu.jpg" alt="Graphics Card">
+            <h3>Graphics Card (GPU)</h3>
+            <p>Processes graphics for games, videos, and applications.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/ssd.jpg" alt="SSD">
+            <h3>SSD</h3>
+            <p>Stores the operating system, software, and files with fast access.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/hdd.jpg" alt="HDD">
+            <h3>Hard Disk Drive</h3>
+            <p>Provides long-term storage for files and applications.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/power supply.jpg" alt="Power Supply">
+            <h3>Power Supply (PSU)</h3>
+            <p>Supplies electrical power to every component in the computer.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/cooler.jpg" alt="CPU Cooler">
+            <h3>CPU Cooler</h3>
+            <p>Removes heat from the processor to prevent overheating.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/case.jpg" alt="Case Fan">
+            <h3>Case Fan</h3>
+            <p>Improves airflow and helps cool the computer.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/computer case.jpg" alt="Computer Case">
+            <h3>Computer Case</h3>
+            <p>Holds and protects all computer hardware.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/cmos.jpg" alt="CMOS Battery">
+            <h3>CMOS Battery</h3>
+            <p>Maintains BIOS settings and the system clock.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/thermal paste.jpg" alt="Thermal Paste">
+            <h3>Thermal Paste</h3>
+            <p>Improves heat transfer between the CPU and the cooler.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/network card.jpg" alt="Network Card">
+            <h3>Network Card</h3>
+            <p>Connects the computer to a wired network.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/wifi.jpg" alt="Wi-Fi Adapter">
+            <h3>Wi-Fi Adapter</h3>
+            <p>Connects the computer to a wireless network.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/sound card.jpg" alt="Sound Card">
+            <h3>Sound Card</h3>
+            <p>Processes audio input and output.</p>
+        </div>
+
+        <div class="hardware-card">
+            <img src="images/BIOS Chip.jpg" alt="BIOS Chip">
+            <h3>BIOS / UEFI Chip</h3>
+            <p>Starts the computer and initializes the hardware.</p>
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navLeft = document.querySelector(".nav-left");
+const navRight = document.querySelector(".nav-right");
+
+menuToggle.addEventListener("click", () => {
+    navLeft.classList.toggle("active");
+    navRight.classList.toggle("active");
+});
+</script>
+</body>
+</html>
