@@ -1,0 +1,990 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+/* Navigation Bar */
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 20px;
+    width:100%;
+    background:#000;
+}
+
+/* Logo */
+.logo{
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+    margin-right:70px;
+}
+
+/* Left and Right navigation */
+.nav-left,
+.nav-right{
+    display:flex;
+    list-style:none;
+    gap:40px;
+    margin-right:35px;
+}
+
+.nav-left a,
+.nav-right a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.nav-left a:hover,
+.nav-right a:hover{
+    color:#f1cd01;
+}
+
+/* Push the right menu to the far right */
+.nav-right{
+    margin-left:auto;
+}
+
+/* ==========================
+   HARDWARE BANNER
+========================== */
+
+.hardware-banner{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hardware-banner img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(45%);
+}
+
+/* Dark Overlay */
+.hardware-banner::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    z-index: 1;
+}
+
+/* Bottom Fade */
+.hardware-banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background: linear-gradient(
+        to bottom,
+        rgba(13,13,13,0),
+        rgba(13,13,13,.45),
+        #0d0d0d
+    );
+    z-index: 1;
+}
+
+/* Banner Content */
+
+.hard-content{
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 850px;
+    text-align: center;
+    color: #fff;
+}
+
+.hard-content h4{
+    color: #D9B44A;
+    letter-spacing: 6px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 8px rgba(0,0,0,.8);
+}
+
+.hard-content h1{
+    font-size: clamp(2.8rem,6vw,5rem);
+    line-height: 1.15;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #fff;
+
+    text-shadow:
+        0 3px 10px rgba(0,0,0,.8),
+        0 8px 24px rgba(0,0,0,.7);
+}
+
+.hard-content h1 span{
+    color: #FFD700;
+}
+
+.hard-content p{
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #f2f2f2;
+
+    text-shadow: 0 2px 8px rgba(0,0,0,.8);
+}
+
+.hardware-section h2{
+    font-size:42px;
+    color:#FFD700;
+    margin-bottom:10px;
+    line-height:1.2;
+}
+
+.hardware-section p{
+    color:#bdbdbd;
+    font-size:18px;
+    line-height:1.6;
+    max-width:700px;
+    margin:0 auto 35px;
+}
+
+/* Button */
+
+.parts-btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#FFD700;
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.parts-btn:hover{
+    background:#ffdf4d;
+    transform:translateY(-3px);
+    box-shadow:0 0 20px rgba(255,215,0,.6);
+}
+
+.hardware-section{
+    background:#0d0d0d;
+    color:#fff;
+    padding:50px 8% 80px;
+    text-align:center;
+}
+
+.hardware-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hardware-card{
+    background:#181818;
+    border:1px solid #2f2f2f;
+    border-radius:18px;
+    padding:25px;
+    transition:.35s ease;
+    cursor:pointer;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+
+    min-height:380px;
+}
+
+.hardware-card img{
+    width:100%;
+    height:190px;
+    object-fit:contain;
+    object-position:center;
+    margin-bottom:20px;
+    transition:.35s;
+}
+
+.hardware-card:hover{
+    transform:translateY(-8px);
+    border-color:#FFD700;
+    box-shadow:
+        0 0 15px rgba(255,215,0,.25),
+        0 0 35px rgba(255,215,0,.15);
+}
+
+/* ----> Guide Section <---- */
+/* ==========================
+   REPAIR BANNER
+========================== */
+
+.page-banner{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-banner img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(45%);
+}
+
+/* Dark Overlay */
+
+.page-banner::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    z-index: 1;
+}
+
+/* Fade into next section */
+
+.page-banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    background: linear-gradient(
+        to bottom,
+        rgba(17,17,17,0),
+        rgba(17,17,17,.45),
+        #111
+    );
+    z-index: 1;
+}
+
+.banner-content{
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 850spx;
+    text-align: center;
+    color: white;
+}
+
+.banner-content h4{
+    color:#D9B44A;
+    letter-spacing:6px;
+    font-size:1rem;
+    margin-bottom:5px;
+}
+
+.banner-content h1{
+    font-size:clamp(2.8rem,6vw,5rem);
+    line-height:1.15;
+    margin-bottom:20px;
+    font-weight:800;
+
+    text-shadow:
+        0 3px 10px rgba(0,0,0,.8),
+        0 8px 25px rgba(0,0,0,.6);
+}
+
+.banner-content p{
+    max-width:650px;
+    margin:auto;
+    font-size:1.2rem;
+    line-height:1.7;
+    color:#f2f2f2;
+
+    text-shadow:0 2px 8px rgba(0,0,0,.8);
+}
+
+/* Entire page */
+body{
+    margin: 0;
+    background: #000;
+    color: white;
+}
+
+.repair-section{
+    background:#111;
+    padding:80px 8%;
+}
+
+.repair-section h2{
+    text-align:center;
+    color:#FFD700;
+    font-size:clamp(2rem,5vw,3.5rem);
+    margin-bottom:30px;
+}
+
+/* Grid */
+
+.guide-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+    gap:35px;
+}
+
+.guide-card{
+    width:100%;
+}
+/* Card */
+
+.guide-card{
+    background:linear-gradient(145deg,#1a1a1a,#111);
+    border:1px solid #2d2d2d;
+    border-radius:20px;
+    padding:35px;
+    min-height:420px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    transition:.35s;
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+}
+
+.guide-card:hover{
+    transform:translateY(-10px);
+    border-color:#FFD54A;
+    box-shadow:
+        0 0 20px rgba(255,213,74,.35),
+        0 15px 30px rgba(0,0,0,.45);
+}
+
+
+.guide-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#c4980a;
+
+    box-shadow:0 12px 28px rgba(235, 185, 23, 0.466);
+}
+
+.guide-card:hover::before{
+    transform:scaleY(1);
+}
+
+/* Title */
+
+.guide-card h3{
+    color:white;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+/* Description */
+
+.guide-card p{
+    color:#d8d8d8;
+    font-size:1.15rem;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+/* Read Guide Button */
+
+.maintenance-card:hover{
+    transform:translateY(-10px);
+    border-color:#FFD54A;
+    box-shadow:
+        0 0 20px rgba(255,213,74,.35),
+        0 0 40px rgba(255,213,74,.15),
+        0 15px 30px rgba(0,0,0,.4);
+}
+
+.maintenance-card:hover::before{
+    transform:scaleY(1);
+}
+
+.accordion{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:12px;
+    background:#d3b657;
+    color:#000;
+    font-size:1.2rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.accordion:hover{
+    background:#FFD54A;
+    transform:translateY(-3px);
+    box-shadow:0 0 18px rgba(255,213,74,.6);
+}
+
+ .accordion:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 10px rgba(255,213,74,.35);
+}
+
+.accordion.active{
+    box-shadow:0 0 10px rgb(219, 168, 0);
+}
+/* Drawer */
+
+.panel{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .35s ease;
+
+    margin-top:15px;
+
+    color:#ddd;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+.panel h4{
+
+    color:#d4af37;
+
+    margin:12px 0 6px;
+
+}
+
+.panel ul,
+.panel ol{
+
+    padding-left:18px;
+
+}
+
+/*----> maintenance Section <----*/
+/* Banner */
+/* ===========================
+   MAINTENANCE BANNER
+=========================== */
+
+.maintenance-banner{
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+}
+
+.maintenance-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(35%);
+}
+
+/* Dark overlay */
+/* Dark overlay */
+
+.maintenance-banner::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,.20) 0%,
+            rgba(0,0,0,.35) 25%,
+            rgba(0,0,0,.50) 60%,
+            rgba(17,17,17,.75) 85%,
+            #111 100%
+        );
+
+    z-index: 1;
+}
+
+/* Bottom fade */
+.maintenance-banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(17,17,17,0),
+        rgba(17,17,17,.4),
+        rgba(17,17,17,.8),
+        #111
+    );
+
+    z-index: 2;
+}
+
+.nance-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 850px;
+    text-align: center;
+    color: white;
+    z-index: 3; /* Above the overlays */
+}
+
+.nance-content h1{
+    color: #ffffff;
+    font-size: clamp(2.5rem,7vw,5rem);
+    line-height: 1.2;
+    font-weight: 800;
+
+    /* Makes the text pop from the image */
+    text-shadow:
+        0 2px 4px rgba(0,0,0,.9),
+        0 6px 12px rgba(0,0,0,.8),
+        0 12px 24px rgba(0,0,0,.6);
+}
+
+.nance-content p{
+    color: #f5f5f5;
+
+    text-shadow:
+        0 2px 4px rgba(0,0,0,.9),
+        0 4px 10px rgba(0,0,0,.8);
+}
+
+.nance-content h4{
+    color: #d4af37;
+
+    text-shadow:
+        0 2px 6px rgba(0,0,0,.8);
+}
+
+/* ===========================
+   MAINTENANCE SECTION
+=========================== */
+
+.maintenance-section{
+    background:#111;
+    padding:80px 8%;
+}
+
+.maintenance-section h2{
+    text-align:center;
+    color:#FFD700;
+    font-size:clamp(2rem,5vw,3.5rem);
+    margin-bottom:20px;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.maintenance-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+    gap:35px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.maintenance-card{
+    background:linear-gradient(145deg,#1a1a1a,#111);
+    border:1px solid #2d2d2d;
+    border-radius:20px;
+    padding:35px;
+    min-height:430px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    transition:.35s;
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+}
+
+.maintenance-card:hover{
+    transform:translateY(-10px);
+    border-color:#FFD54A;
+    box-shadow:
+        0 0 20px rgba(255,213,74,.35),
+        0 15px 30px rgba(0,0,0,.45);
+}
+
+.maintenance-card h3{
+    color:#fff;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.maintenance-card p{
+    color:#d8d8d8;
+    font-size:1.15rem;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.accordion{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:12px;
+    background:#d3b657;
+    color:#000;
+    font-size:1.2rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.accordion:hover{
+    background:#FFD54A;
+    transform:translateY(-3px);
+    box-shadow:0 0 18px rgba(255,213,74,.6);
+}
+
+.accordion.active{
+    box-shadow:0 0 12px #FFD54A;
+}
+
+/* ===========================
+   PANEL
+=========================== */
+
+.panel{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .35s ease;
+    color:white;
+}
+
+.panel ol{
+    margin-top:20px;
+    padding-left:20px;
+}
+
+.panel li{
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+    .maintenance-banner{
+        height:60vh;
+    }
+
+    .nance-content{
+        width:92%;
+    }
+
+    .nance-content h1{
+        font-size:2.5rem;
+    }
+
+    .nance-content p{
+        font-size:1rem;
+    }
+
+    .maintenance-grid{
+        grid-template-columns:1fr;
+    }
+
+    .maintenance-card{
+        min-height:auto;
+        padding:30px;
+    }
+
+    .maintenance-card h3{
+        font-size:1.8rem;
+    }
+
+    .accordion{
+        font-size:1.1rem;
+    }
+}
+
+/*----> Hero Section <----*/
+
+
+/* Remove white space around the page */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Dark overlay so text is readable */
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+}
+
+/* Text on top of image */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.small-title{
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+}
+
+.hero-text h1{
+    font-size: clamp(60px, 10vw, 120px);
+    margin: 0;
+}
+
+.hero-text h2{
+    font-size: clamp(40px, 7vw, 80px);
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.description{
+    font-size: 1.3rem;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 25px auto;
+}
+
+.btn{
+    display: inline-block;
+    margin: 30px auto 0;
+    padding: 18px 45px;
+    background: white;
+    color: black;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn{
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    background:#000000;
+    color:white;
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(255, 255, 255, 0.4);
+}
+
+
+/* Hide hamburger on large screens */
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    color:white;
+    cursor:pointer;
+}
+
+.active{
+    color:#f0c040;
+    border-bottom:2px solid #f0c040;
+}
+
+/* Mobile Layout */
+@media (max-width:900px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .navbar{
+        position:relative;
+        flex-wrap:wrap;
+    }
+
+    .nav-left,
+    .nav-right{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        background:#000;
+        text-align:center;
+        gap:20px;
+        padding:20px 0;
+    }
+
+    .nav-left.active,
+    .nav-right.active{
+        display:flex;
+    }
+
+    .logo{
+        margin-right:auto;
+    }
+}
+
+@view-transition {
+ navigation: auto;
+}
+
+@media (max-width:768px){
+
+    .page-banner{
+        height:40vh;
+    }
+
+    .banner-content{
+        width:92%;
+    }
+
+    .banner-content h1{
+        font-size:2.5rem;
+    }
+
+    .banner-content p{
+        font-size:1rem;
+    }
+
+    .guide-grid{
+        grid-template-columns:1fr;
+    }
+
+    .guide-card{
+        min-height:auto;
+        padding:30px;
+    }
+
+    .guide-card h3{
+        font-size:1.8rem;
+    }
+
+    .accordion{
+        font-size:1.1rem;
+    }
+}
+
+@media (max-width:768px){
+
+    .maintenance-banner{
+        height:40vh;
+    }
+
+    .nance-content{
+        width:92%;
+    }
+
+    .nance-content h4{
+        font-size:.9rem;
+        letter-spacing:5px;
+        margin-bottom:15px;
+    }
+
+    .nance-content h1{
+        font-size:2.8rem;
+        line-height:1.2;
+        margin-bottom:20px;
+    }
+
+    .nance-content p{
+        font-size:1.05rem;
+        line-height:1.7;
+        width:100%;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .hardware-banner{
+        height:50vh;
+    }
+
+    .hard-content{
+        width:92%;
+    }
+
+    .hard-content h1{
+        font-size:3rem;
+    }
+
+    .hard-content p{
+        font-size:1rem;
+    }
+
+    .hardware-section{
+        padding:60px 20px;
+    }
+
+    .hardware-section h2{
+        font-size:40px;
+    }
+
+    .hardware-grid{
+        grid-template-columns:2fr;
+    }
+
+    .hardware-card img{
+        height:200px;
+    }
+}
